@@ -336,7 +336,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:text="홍길동"
+                        android:text="손흥민"
                         app:layout_constraintBottom_toBottomOf="@id/iv_main_friends"
                         app:layout_constraintStart_toEndOf="@id/iv_main_friends"
                         app:layout_constraintTop_toTopOf="@id/iv_main_friends" />
@@ -357,7 +357,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:text="홍길동1"
+                        android:text="케인"
                         app:layout_constraintBottom_toBottomOf="@id/iv_main_friends1"
                         app:layout_constraintStart_toEndOf="@id/iv_main_friends1"
                         app:layout_constraintTop_toTopOf="@id/iv_main_friends1" />
@@ -378,7 +378,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:text="홍길동2"
+                        android:text="모우라"
                         app:layout_constraintBottom_toBottomOf="@id/iv_main_friends2"
                         app:layout_constraintStart_toEndOf="@id/iv_main_friends2"
                         app:layout_constraintTop_toTopOf="@id/iv_main_friends2" />
@@ -399,7 +399,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:text="홍길동3"
+                        android:text="히샬리송"
                         app:layout_constraintBottom_toBottomOf="@id/iv_main_friends3"
                         app:layout_constraintStart_toEndOf="@id/iv_main_friends3"
                         app:layout_constraintTop_toTopOf="@id/iv_main_friends3" />
@@ -420,7 +420,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:text="홍길동4"
+                        android:text="요리스"
                         app:layout_constraintBottom_toBottomOf="@id/iv_main_friends4"
                         app:layout_constraintStart_toEndOf="@id/iv_main_friends4"
                         app:layout_constraintTop_toTopOf="@id/iv_main_friends4" />
@@ -441,7 +441,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:text="홍길동5"
+                        android:text="다이어"
                         app:layout_constraintBottom_toBottomOf="@id/iv_main_friends5"
                         app:layout_constraintStart_toEndOf="@id/iv_main_friends5"
                         app:layout_constraintTop_toTopOf="@id/iv_main_friends5" />
@@ -462,7 +462,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:text="홍길동6"
+                        android:text="호이비에르"
                         app:layout_constraintBottom_toBottomOf="@id/iv_main_friends6"
                         app:layout_constraintStart_toEndOf="@id/iv_main_friends6"
                         app:layout_constraintTop_toTopOf="@id/iv_main_friends6" />
@@ -483,7 +483,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:text="홍길동7"
+                        android:text="브라인힐"
                         app:layout_constraintBottom_toBottomOf="@id/iv_main_friends7"
                         app:layout_constraintStart_toEndOf="@id/iv_main_friends7"
                         app:layout_constraintTop_toTopOf="@id/iv_main_friends7" />
@@ -504,7 +504,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:text="홍길동8"
+                        android:text="화이트"
                         app:layout_constraintBottom_toBottomOf="@id/iv_main_friends8"
                         app:layout_constraintStart_toEndOf="@id/iv_main_friends8"
                         app:layout_constraintTop_toTopOf="@id/iv_main_friends8" />
@@ -525,7 +525,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:text="홍길동9"
+                        android:text="세세뇽"
                         app:layout_constraintBottom_toBottomOf="@id/iv_main_friends9"
                         app:layout_constraintStart_toEndOf="@id/iv_main_friends9"
                         app:layout_constraintTop_toTopOf="@id/iv_main_friends9" />
