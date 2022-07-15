@@ -193,53 +193,54 @@
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
-                        android:layout_marginEnd="30dp"
                         android:background="@color/white"
-                        android:scaleType="fitXY"
+                        android:scaleType="centerInside"
+                        android:layout_gravity="center"
                         android:src="@drawable/supermarket_gift" />
 
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
-                        android:layout_marginEnd="30dp"
                         android:background="@color/white"
-                        android:scaleType="fitXY"
+                        android:scaleType="centerInside"
                         android:src="@drawable/shopping_cart" />
 
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
-                        android:layout_marginEnd="30dp"
                         android:background="@color/white"
-                        android:scaleType="fitXY"
+                        android:scaleType="centerInside"
                         android:src="@drawable/letter_m" />
 
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:background="@color/white"
-                        android:scaleType="fitXY"
+                        android:scaleType="centerInside"
                         android:src="@drawable/gummy_bear" />
 
                 </TableRow>
 
-                <TableRow android:layout_marginBottom="20dp">
+                <TableRow
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:gravity="center"
                         android:text="선물하기" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:gravity="center"
                         android:text="쇼핑하기" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:gravity="center"
                         android:text="메이커스" />
 
                     <TextView
@@ -255,54 +256,52 @@
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
-                        android:layout_marginEnd="30dp"
                         android:background="@color/white"
-                        android:scaleType="fitXY"
+                        android:scaleType="centerInside"
                         android:src="@drawable/emotion" />
 
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
-                        android:layout_marginEnd="30dp"
                         android:background="@color/white"
-                        android:scaleType="fitXY"
+                        android:scaleType="centerInside"
                         android:src="@drawable/opened_frontal_drawer" />
 
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
-                        android:layout_marginEnd="30dp"
                         android:background="@color/white"
-                        android:scaleType="fitXY"
+                        android:scaleType="centerInside"
                         android:src="@drawable/open_mail" />
 
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:background="@color/white"
-                        android:scaleType="fitXY"
+                        android:scaleType="centerInside"
                         android:src="@drawable/calendars" />
 
                 </TableRow>
 
-                <TableRow android:layout_marginBottom="20dp">
+                <TableRow android:layout_marginBottom="20dp"
+                    android:layout_marginTop="5dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:gravity="center"
                         android:text="이모티콘" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:gravity="center"
                         android:text="톡서랍" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:gravity="center"
                         android:text="메일" />
 
                     <TextView
@@ -318,53 +317,52 @@
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
-                        android:layout_marginEnd="30dp"
                         android:background="@color/white"
-                        android:scaleType="fitXY"
+                        android:scaleType="centerInside"
                         android:src="@drawable/game_control" />
 
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
-                        android:layout_marginEnd="30dp"
                         android:background="@color/white"
-                        android:scaleType="fitXY"
+                        android:scaleType="centerInside"
                         android:src="@drawable/clothes_hanger" />
 
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
-                        android:layout_marginEnd="30dp"
                         android:background="@color/white"
-                        android:scaleType="fitXY"
+                        android:scaleType="centerInside"
                         android:src="@drawable/tableware" />
 
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:background="@color/white"
-                        android:scaleType="fitXY"
+                        android:scaleType="centerInside"
                         android:src="@drawable/plane_tickets" />
 
                 </TableRow>
 
-                <TableRow android:layout_marginBottom="20dp">
+                <TableRow android:layout_marginBottom="20dp"
+                    android:layout_marginTop="5dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:gravity="center"
                         android:text="게임" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:gravity="center"
                         android:text="패션" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:gravity="center"
                         android:text="주문하기" />
 
                     <TextView
@@ -380,52 +378,51 @@
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
-                        android:layout_marginEnd="30dp"
                         android:background="@color/white"
-                        android:scaleType="fitXY"
+                        android:scaleType="centerInside"
                         android:src="@drawable/pin_map" />
 
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
-                        android:layout_marginEnd="30dp"
                         android:background="@color/white"
-                        android:scaleType="fitXY"
+                        android:scaleType="centerInside"
                         android:src="@drawable/bubble_chat" />
 
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
-                        android:layout_marginEnd="30dp"
                         android:background="@color/white"
-                        android:scaleType="fitXY"
+                        android:scaleType="centerInside"
                         android:src="@drawable/business_card" />
 
                     <ImageButton
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:background="@color/white"
-                        android:scaleType="fitXY"
+                        android:scaleType="centerInside"
                         android:src="@drawable/customer_service_agent" />
                 </TableRow>
 
-                <TableRow>
+                <TableRow
+                    android:layout_marginTop="5dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:gravity="center"
                         android:text="카카오맵" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:gravity="center"
                         android:text="오픈채팅" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:gravity="center"
                         android:text="톡명함" />
 
                     <TextView
@@ -469,6 +466,7 @@
                 app:layout_constraintTop_toBottomOf="@id/tv_more_kakaonow"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
