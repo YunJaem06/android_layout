@@ -9,32 +9,32 @@
         android:id="@+id/tl_main_top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingEnd="15dp">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/tv_main_friend"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="친구"
-                android:layout_marginBottom="10dp"
-                android:layout_marginStart="10dp"
+
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="친구"
                 android:textColor="@color/black"
-                android:textSize="22sp" />
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/iv_main_setting"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="10dp"
                 android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
                 android:src="@drawable/web_settings" />
 
             <ImageView
@@ -43,7 +43,7 @@
                 android:layout_height="20dp"
                 android:layout_alignTop="@id/iv_main_setting"
                 android:layout_alignBottom="@id/iv_main_setting"
-                android:layout_marginRight="15dp"
+                android:layout_marginRight="20dp"
                 android:layout_toLeftOf="@id/iv_main_setting"
                 android:src="@drawable/music_player" />
 
@@ -53,7 +53,7 @@
                 android:layout_height="20dp"
                 android:layout_alignTop="@id/iv_main_music"
                 android:layout_alignBottom="@id/iv_main_music"
-                android:layout_marginRight="15dp"
+                android:layout_marginRight="20dp"
                 android:layout_toLeftOf="@id/iv_main_music"
                 android:src="@drawable/add_user" />
 
@@ -63,7 +63,7 @@
                 android:layout_height="20dp"
                 android:layout_alignTop="@id/iv_main_add_user"
                 android:layout_alignBottom="@id/iv_main_add_user"
-                android:layout_marginRight="15dp"
+                android:layout_marginRight="20dp"
                 android:layout_toLeftOf="@id/iv_main_add_user"
                 android:src="@drawable/rounded_magnifying_glass" />
         </RelativeLayout>
@@ -81,460 +81,480 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_main_my_profile"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/icon_user"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="비바 / 이윤재"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_main_my_profile"
+                    app:layout_constraintStart_toEndOf="@id/iv_main_my_profile"
+                    app:layout_constraintTop_toTopOf="@id/iv_main_my_profile" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="370dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="#d3d3d3" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_main_multi_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="내 멀티프로필"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_main_multi_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/icon_user"
+                    app:layout_constraintStart_toStartOf="@id/tv_main_multi_profile"
+                    app:layout_constraintTop_toBottomOf="@id/tv_main_multi_profile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="친구별로 다른 프로필을 설정해보세요!"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_main_multi_img"
+                    app:layout_constraintStart_toEndOf="@id/iv_main_multi_img"
+                    app:layout_constraintTop_toTopOf="@id/iv_main_multi_img" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="370dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#d3d3d3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_main_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="생일인 친구"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/iv_main_birthday_cake"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/tv_main_birthday"
+                    android:layout_alignLeft="@id/tv_main_birthday"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/birthday_cake" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/iv_main_birthday_cake"
+                    android:layout_alignBottom="@id/iv_main_birthday_cake"
+                    android:layout_marginStart="15dp"
+                    android:layout_toRightOf="@id/iv_main_birthday_cake"
+                    android:text="친구의 생일을 확인해보세요!"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="370dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="#d3d3d3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <ImageView
-                        android:id="@+id/iv_main_my_profile"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="10dp"
-                        android:src="@drawable/icon_user"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="15dp"
-                        android:text="비바 / 이윤재"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        app:layout_constraintBottom_toBottomOf="@id/iv_main_my_profile"
-                        app:layout_constraintStart_toEndOf="@id/iv_main_my_profile"
-                        app:layout_constraintTop_toTopOf="@id/iv_main_my_profile" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#d3d3d3" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/tv_main_multi_profile"
+                        android:id="@+id/tv_main_update_profile"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
-                        android:text="내 멀티프로필"
-                        android:textColor="#00a000"
+                        android:text="업데이트한 친구 3"
                         android:textSize="12sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
-                        android:id="@+id/iv_main_multi_img"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:id="@+id/iv_main_update_profile"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
                         android:src="@drawable/icon_user"
-                        app:layout_constraintStart_toStartOf="@id/tv_main_multi_profile"
-                        app:layout_constraintTop_toBottomOf="@id/tv_main_multi_profile" />
+                        app:layout_constraintEnd_toEndOf="@id/tv_main_update_friend"
+                        app:layout_constraintStart_toStartOf="@id/tv_main_update_friend"
+                        app:layout_constraintTop_toBottomOf="@id/tv_main_update_profile" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="15dp"
-                        android:text="친구별로 다른 프로필을 설정해보세요!"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        app:layout_constraintBottom_toBottomOf="@id/iv_main_multi_img"
-                        app:layout_constraintStart_toEndOf="@id/iv_main_multi_img"
-                        app:layout_constraintTop_toTopOf="@id/iv_main_multi_img" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="10dp"
-                    android:background="#d3d3d3" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/tv_main_birthday"
+                        android:id="@+id/tv_main_update_friend"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:text="생일인 친구"
-                        android:textColor="#00a000"
-                        android:textSize="12sp" />
-
-                    <ImageView
-                        android:id="@+id/iv_main_birthday_cake"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_below="@id/tv_main_birthday"
-                        android:layout_alignLeft="@id/tv_main_birthday"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:src="@drawable/birthday_cake" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignTop="@id/iv_main_birthday_cake"
-                        android:layout_alignBottom="@id/iv_main_birthday_cake"
-                        android:layout_marginStart="15dp"
-                        android:layout_toRightOf="@id/iv_main_birthday_cake"
-                        android:text="친구의 생일을 확인해보세요!"
+                        android:layout_marginTop="5dp"
+                        android:text="배고프다"
                         android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                </RelativeLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#d3d3d3" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:orientation="horizontal">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:id="@+id/tv_main_update_profile"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="10dp"
-                            android:text="업데이트한 친구 3"
-                            android:textColor="#00a000"
-                            android:textSize="12sp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <ImageView
-                            android:id="@+id/iv_main_update_profile"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginTop="10dp"
-                            android:src="@drawable/icon_user"
-                            app:layout_constraintEnd_toEndOf="@id/tv_main_update_friend"
-                            app:layout_constraintStart_toStartOf="@id/tv_main_update_friend"
-                            app:layout_constraintTop_toBottomOf="@id/tv_main_update_profile" />
-
-                        <TextView
-                            android:id="@+id/tv_main_update_friend"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="5dp"
-                            android:text="배고프다"
-                            android:textSize="10sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/iv_main_update_profile" />
-
-                        <ImageView
-                            android:id="@+id/iv_main_update_profile2"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginTop="10dp"
-                            android:src="@drawable/icon_user"
-                            app:layout_constraintEnd_toEndOf="@id/tv_main_update_friend2"
-                            app:layout_constraintStart_toStartOf="@id/tv_main_update_friend2"
-                            app:layout_constraintTop_toBottomOf="@id/tv_main_update_profile" />
-
-                        <TextView
-                            android:id="@+id/tv_main_update_friend2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="5dp"
-                            android:text="오늘"
-                            android:textSize="10sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toEndOf="@id/tv_main_update_friend"
-                            app:layout_constraintTop_toBottomOf="@id/iv_main_update_profile2" />
-
-                        <ImageView
-                            android:id="@+id/iv_main_update_profile3"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_marginTop="10dp"
-                            android:src="@drawable/icon_user"
-                            app:layout_constraintEnd_toEndOf="@id/tv_main_update_friend3"
-                            app:layout_constraintStart_toStartOf="@id/tv_main_update_friend3"
-                            app:layout_constraintTop_toBottomOf="@id/tv_main_update_profile" />
-
-                        <TextView
-                            android:id="@+id/tv_main_update_friend3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="25dp"
-                            android:layout_marginTop="5dp"
-                            android:text="뭐먹지"
-                            android:textSize="10sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toEndOf="@id/tv_main_update_friend2"
-                            app:layout_constraintTop_toBottomOf="@id/iv_main_update_profile3" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#d3d3d3" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/tv_main_friends1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:text="친구 200"
-                        android:textColor="#00a000"
                         android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toBottomOf="@id/iv_main_update_profile" />
 
                     <ImageView
-                        android:id="@+id/iv_main_friends"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="10dp"
+                        android:id="@+id/iv_main_update_profile2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="10dp"
                         android:src="@drawable/icon_user"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/tv_main_friends1" />
+                        app:layout_constraintEnd_toEndOf="@id/tv_main_update_friend2"
+                        app:layout_constraintStart_toStartOf="@id/tv_main_update_friend2"
+                        app:layout_constraintTop_toBottomOf="@id/tv_main_update_profile" />
 
                     <TextView
+                        android:id="@+id/tv_main_update_friend2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:text="손흥민"
-                        app:layout_constraintBottom_toBottomOf="@id/iv_main_friends"
-                        app:layout_constraintStart_toEndOf="@id/iv_main_friends"
-                        app:layout_constraintTop_toTopOf="@id/iv_main_friends" />
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="오늘"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tv_main_update_friend"
+                        app:layout_constraintTop_toBottomOf="@id/iv_main_update_profile2" />
 
                     <ImageView
-                        android:id="@+id/iv_main_friends1"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="10dp"
+                        android:id="@+id/iv_main_update_profile3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="10dp"
                         android:src="@drawable/icon_user"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/iv_main_friends" />
+                        app:layout_constraintEnd_toEndOf="@id/tv_main_update_friend3"
+                        app:layout_constraintStart_toStartOf="@id/tv_main_update_friend3"
+                        app:layout_constraintTop_toBottomOf="@id/tv_main_update_profile" />
 
                     <TextView
+                        android:id="@+id/tv_main_update_friend3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:text="케인"
-                        app:layout_constraintBottom_toBottomOf="@id/iv_main_friends1"
-                        app:layout_constraintStart_toEndOf="@id/iv_main_friends1"
-                        app:layout_constraintTop_toTopOf="@id/iv_main_friends1" />
-
-                    <ImageView
-                        android:id="@+id/iv_main_friends2"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:src="@drawable/icon_user"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/iv_main_friends1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:text="모우라"
-                        app:layout_constraintBottom_toBottomOf="@id/iv_main_friends2"
-                        app:layout_constraintStart_toEndOf="@id/iv_main_friends2"
-                        app:layout_constraintTop_toTopOf="@id/iv_main_friends2" />
-
-                    <ImageView
-                        android:id="@+id/iv_main_friends3"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:src="@drawable/icon_user"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/iv_main_friends2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:text="히샬리송"
-                        app:layout_constraintBottom_toBottomOf="@id/iv_main_friends3"
-                        app:layout_constraintStart_toEndOf="@id/iv_main_friends3"
-                        app:layout_constraintTop_toTopOf="@id/iv_main_friends3" />
-
-                    <ImageView
-                        android:id="@+id/iv_main_friends4"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:src="@drawable/icon_user"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/iv_main_friends3" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:text="요리스"
-                        app:layout_constraintBottom_toBottomOf="@id/iv_main_friends4"
-                        app:layout_constraintStart_toEndOf="@id/iv_main_friends4"
-                        app:layout_constraintTop_toTopOf="@id/iv_main_friends4" />
-
-                    <ImageView
-                        android:id="@+id/iv_main_friends5"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:src="@drawable/icon_user"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/iv_main_friends4" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:text="다이어"
-                        app:layout_constraintBottom_toBottomOf="@id/iv_main_friends5"
-                        app:layout_constraintStart_toEndOf="@id/iv_main_friends5"
-                        app:layout_constraintTop_toTopOf="@id/iv_main_friends5" />
-
-                    <ImageView
-                        android:id="@+id/iv_main_friends6"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:src="@drawable/icon_user"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/iv_main_friends5" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:text="호이비에르"
-                        app:layout_constraintBottom_toBottomOf="@id/iv_main_friends6"
-                        app:layout_constraintStart_toEndOf="@id/iv_main_friends6"
-                        app:layout_constraintTop_toTopOf="@id/iv_main_friends6" />
-
-                    <ImageView
-                        android:id="@+id/iv_main_friends7"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:src="@drawable/icon_user"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/iv_main_friends6" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:text="브라인힐"
-                        app:layout_constraintBottom_toBottomOf="@id/iv_main_friends7"
-                        app:layout_constraintStart_toEndOf="@id/iv_main_friends7"
-                        app:layout_constraintTop_toTopOf="@id/iv_main_friends7" />
-
-                    <ImageView
-                        android:id="@+id/iv_main_friends8"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:src="@drawable/icon_user"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/iv_main_friends7" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:text="화이트"
-                        app:layout_constraintBottom_toBottomOf="@id/iv_main_friends8"
-                        app:layout_constraintStart_toEndOf="@id/iv_main_friends8"
-                        app:layout_constraintTop_toTopOf="@id/iv_main_friends8" />
-
-                    <ImageView
-                        android:id="@+id/iv_main_friends9"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:src="@drawable/icon_user"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/iv_main_friends8" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:text="세세뇽"
-                        app:layout_constraintBottom_toBottomOf="@id/iv_main_friends9"
-                        app:layout_constraintStart_toEndOf="@id/iv_main_friends9"
-                        app:layout_constraintTop_toTopOf="@id/iv_main_friends9" />
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="5dp"
+                        android:text="뭐먹지"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tv_main_update_friend2"
+                        app:layout_constraintTop_toBottomOf="@id/iv_main_update_profile3" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
             </LinearLayout>
+
+            <View
+                android:layout_width="370dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="#d3d3d3" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_main_friends1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="친구 200"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_main_friends"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/icon_user"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_main_friends1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="손흥민"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_main_friends"
+                    app:layout_constraintStart_toEndOf="@id/iv_main_friends"
+                    app:layout_constraintTop_toTopOf="@id/iv_main_friends" />
+
+                <ImageView
+                    android:id="@+id/iv_main_friends1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/icon_user"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_main_friends" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="케인"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_main_friends1"
+                    app:layout_constraintStart_toEndOf="@id/iv_main_friends1"
+                    app:layout_constraintTop_toTopOf="@id/iv_main_friends1" />
+
+                <ImageView
+                    android:id="@+id/iv_main_friends2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/icon_user"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_main_friends1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="모우라"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_main_friends2"
+                    app:layout_constraintStart_toEndOf="@id/iv_main_friends2"
+                    app:layout_constraintTop_toTopOf="@id/iv_main_friends2" />
+
+                <ImageView
+                    android:id="@+id/iv_main_friends3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/icon_user"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_main_friends2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="히샬리송"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_main_friends3"
+                    app:layout_constraintStart_toEndOf="@id/iv_main_friends3"
+                    app:layout_constraintTop_toTopOf="@id/iv_main_friends3" />
+
+                <ImageView
+                    android:id="@+id/iv_main_friends4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/icon_user"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_main_friends3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="요리스"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_main_friends4"
+                    app:layout_constraintStart_toEndOf="@id/iv_main_friends4"
+                    app:layout_constraintTop_toTopOf="@id/iv_main_friends4" />
+
+                <ImageView
+                    android:id="@+id/iv_main_friends5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/icon_user"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_main_friends4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="다이어"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_main_friends5"
+                    app:layout_constraintStart_toEndOf="@id/iv_main_friends5"
+                    app:layout_constraintTop_toTopOf="@id/iv_main_friends5" />
+
+                <ImageView
+                    android:id="@+id/iv_main_friends6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/icon_user"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_main_friends5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="호이비에르"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_main_friends6"
+                    app:layout_constraintStart_toEndOf="@id/iv_main_friends6"
+                    app:layout_constraintTop_toTopOf="@id/iv_main_friends6" />
+
+                <ImageView
+                    android:id="@+id/iv_main_friends7"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/icon_user"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_main_friends6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="브라인힐"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_main_friends7"
+                    app:layout_constraintStart_toEndOf="@id/iv_main_friends7"
+                    app:layout_constraintTop_toTopOf="@id/iv_main_friends7" />
+
+                <ImageView
+                    android:id="@+id/iv_main_friends8"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/icon_user"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_main_friends7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="화이트"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_main_friends8"
+                    app:layout_constraintStart_toEndOf="@id/iv_main_friends8"
+                    app:layout_constraintTop_toTopOf="@id/iv_main_friends8" />
+
+                <ImageView
+                    android:id="@+id/iv_main_friends9"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/icon_user"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_main_friends8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="세세뇽"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_main_friends9"
+                    app:layout_constraintStart_toEndOf="@id/iv_main_friends9"
+                    app:layout_constraintTop_toTopOf="@id/iv_main_friends9" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
     </ScrollView>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintBottom_toTopOf="@id/gl_main_bottom"
+        android:background="#d3d3d3" />
     <GridLayout
         android:id="@+id/gl_main_bottom"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="#F6F6F6"
         android:columnCount="5"
         android:orientation="horizontal"
+        android:paddingVertical="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 

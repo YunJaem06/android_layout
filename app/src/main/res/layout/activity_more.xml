@@ -109,8 +109,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="25dp"
                     android:text="인증서"
-                    android:textSize="18sp"
                     android:textColor="@color/black"
+                    android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@id/tv_more_wallet" />
 
@@ -118,43 +118,52 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginEnd="5dp"
-                    app:layout_constraintEnd_toStartOf="@id/tv_main_warranty"
+                    android:src="@drawable/warranty"
                     app:layout_constraintBottom_toBottomOf="@id/tv_main_warranty"
-                    app:layout_constraintTop_toTopOf="@id/tv_main_warranty"
-                    android:src="@drawable/warranty"/>
+                    app:layout_constraintEnd_toStartOf="@id/tv_main_warranty"
+                    app:layout_constraintTop_toTopOf="@id/tv_main_warranty" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_more_custom"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/walletbutton_custom"
                     android:outlineProvider="none"
                     android:paddingLeft="16dp"
-                    android:textAlignment="textStart"
                     android:text="인증서 계좌인증 필수 적용 안내"
-                    android:background="@drawable/walletbutton_custom"
-                    app:layout_constraintTop_toBottomOf="@id/tv_more_wallet"
+                    android:textAlignment="textStart"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    app:layout_constraintTop_toBottomOf="@id/tv_more_wallet" />
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_more_kakaopay"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="25dp"
+                    app:cardCornerRadius="15dp"
                     app:layout_constraintStart_toStartOf="@id/tv_more_wallet"
-                    app:layout_constraintTop_toBottomOf="@id/btn_more_custom"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/kakaopay"/>
+                    app:layout_constraintTop_toBottomOf="@id/btn_more_custom">
 
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/kakaopay" />
+
+                </androidx.cardview.widget.CardView>
 
                 <TextView
+                    android:id="@+id/tv_more_money"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="25dp"
                     android:text="0원"
                     android:textColor="@color/black"
-                    app:layout_constraintBottom_toTopOf="@id/tv_more_buy"
+                    app:layout_constraintTop_toTopOf="@id/cv_more_kakaopay"
+                    app:layout_constraintBottom_toBottomOf="@id/cv_more_kakaopay"
                     app:layout_constraintEnd_toEndOf="@id/tv_more_buy" />
 
                 <TextView
@@ -172,11 +181,11 @@
                 <View
                     android:layout_width="1dp"
                     android:layout_height="15dp"
-                    app:layout_constraintStart_toEndOf="@id/tv_more_remittance"
-                    app:layout_constraintBottom_toBottomOf="@id/tv_more_remittance"
-                    app:layout_constraintTop_toTopOf="@id/tv_more_remittance"
                     android:layout_marginStart="20dp"
-                    android:background="#d3d3d3"/>
+                    android:background="#d3d3d3"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_more_remittance"
+                    app:layout_constraintStart_toEndOf="@id/tv_more_remittance"
+                    app:layout_constraintTop_toTopOf="@id/tv_more_remittance" />
 
                 <TextView
                     android:id="@+id/tv_more_payment"
@@ -192,11 +201,11 @@
                 <View
                     android:layout_width="1dp"
                     android:layout_height="15dp"
-                    app:layout_constraintStart_toEndOf="@id/tv_more_payment"
-                    app:layout_constraintBottom_toBottomOf="@id/tv_more_payment"
-                    app:layout_constraintTop_toTopOf="@id/tv_more_payment"
                     android:layout_marginStart="20dp"
-                    android:background="#d3d3d3"/>
+                    android:background="#d3d3d3"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_more_payment"
+                    app:layout_constraintStart_toEndOf="@id/tv_more_payment"
+                    app:layout_constraintTop_toTopOf="@id/tv_more_payment" />
 
                 <TextView
                     android:id="@+id/tv_more_assets"
@@ -223,8 +232,8 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/shopping_cart"
                     android:layout_marginEnd="5dp"
+                    android:src="@drawable/shopping_cart"
                     app:layout_constraintBottom_toBottomOf="@id/tv_more_buy"
                     app:layout_constraintEnd_toStartOf="@id/tv_more_buy"
                     app:layout_constraintTop_toTopOf="@id/tv_more_buy" />
@@ -521,17 +530,25 @@
                 </TableRow>
             </TableLayout>
 
-            <ImageView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/iv_more_ad"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/risingcamp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tl_more_service" />
+                app:layout_constraintTop_toBottomOf="@id/tl_more_service">
 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/risingcamp" />
+
+            </androidx.cardview.widget.CardView>
 
             <TextView
                 android:id="@+id/tv_more_kakaonow"
