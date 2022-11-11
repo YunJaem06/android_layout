@@ -15,7 +15,7 @@
 
 ### BottomNavigation을 사용해야 하지만 가장 비슷해 보이는 tablelayout과 girdlayout중 사용하기 편리했던 girdlayout를 사용하였음
 ![Untitled (4)](https://user-images.githubusercontent.com/96619472/201299821-a747e01a-1841-4218-8994-7f74748f0625.png)
-
+***
 ### tablelayout을 활용하고 싶어 카카오톡 더보기창을 구현
 #### ConstraintLayout과 tablelayout만 활용하여 구현
 ![Untitled (5)](https://user-images.githubusercontent.com/96619472/201300796-2e580247-aef1-4703-aaa3-c1b51dbddeac.png)
